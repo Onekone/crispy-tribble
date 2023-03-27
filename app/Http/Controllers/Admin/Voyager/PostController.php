@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Admin\Voyager;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use TCG\Voyager\Http\Controllers\VoyagerBaseController as BaseController;
 
-class PostController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
+class PostController extends BaseController
 {
     /**
      * Я мог бы поменять тут что-нибудь, но зачем?

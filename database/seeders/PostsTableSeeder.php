@@ -27,7 +27,7 @@ class PostsTableSeeder extends Seeder
                 'icon'                  => 'voyager-news',
                 'model_name'            => 'TCG\\Voyager\\Models\\Post',
                 'policy_name'           => 'TCG\\Voyager\\Policies\\PostPolicy',
-                'controller'            => '',
+                'controller'            => '\\App\\Http\\Controllers\\Admin\\Voyager\\PostController',
                 'generate_permissions'  => 1,
                 'description'           => '',
             ])->save();

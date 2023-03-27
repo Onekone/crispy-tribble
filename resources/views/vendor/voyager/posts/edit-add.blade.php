@@ -105,7 +105,10 @@
                                 '_field_name'  => 'title',
                                 '_field_trans' => get_field_translations($dataTypeContent, 'title')
                             ])
+                            <!-- Если хотели статически поменять поле на шаблоне -->
                             <textarea class="form-control" id="title" name="title" placeholder="{{ __('voyager::generic.title') }}">{{ $dataTypeContent->title ?? '' }}</textarea>
+                            <!-- Если хотели поменять поле на шаблоне через админку, то нужно раскомментировать строку ниже -->
+{{--                            {!! app('voyager')->formField($dataTypeRows->where('field', 'title')->first(), $dataType, $dataTypeContent) !!}--}}
                         </div>
                     </div>
 

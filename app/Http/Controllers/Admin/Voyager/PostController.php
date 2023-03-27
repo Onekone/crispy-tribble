@@ -8,14 +8,15 @@ use Illuminate\Http\Request;
 class PostController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
 {
     /**
-     * Я мог бы поменять
+     * Я мог бы поменять тут что-нибудь, но зачем?
      *
      * @param Request $request
      * @param $id
      * @return mixed
      */
-    public function show(Request $request, $id)
+    public function edit(Request $request, $id)
     {
-        return parent::show($request, $id);
+        dump('Hello world');
+        return parent::edit($request, $id);
     }
 }

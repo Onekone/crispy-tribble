@@ -38,11 +38,3 @@ docker-compose exec app sh
     php artisan key:generate
     php artisan voyager:install --with-dummy
 ```
-
-
-```bash
-composer create-project laravel/laravel^9.0 laravel
-composer require tcg/voyager
-php artisan voyager:install --with-dummy
-php artisan make:controller Admin/Voyager/PostController
-```

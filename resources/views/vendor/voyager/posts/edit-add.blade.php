@@ -105,7 +105,7 @@
                                 '_field_name'  => 'title',
                                 '_field_trans' => get_field_translations($dataTypeContent, 'title')
                             ])
-                            {!! app('voyager')->formField( $dataTypeRows->where('field', 'title')->first(), $dataType, $dataTypeContent) !!}
+                            <textarea class="form-control" id="title" name="title" placeholder="{{ __('voyager::generic.title') }}">{{ $dataTypeContent->title ?? '' }}</textarea>
                         </div>
                     </div>
 
@@ -125,7 +125,6 @@
                             ])
                             @php
                                 $row = $dataTypeRows->where('field', 'body')->first();
-                                $row->type = 'textarea';
                             @endphp
                             {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
                         </div>
